@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
+import Portfolio from './pages/Portfolio';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
             <Route
               path="/"
               element={<AboutMe />}
+            />
+            <Route
+              path="/portfolio"
+              element={<Portfolio />}
             />
           </Routes>
         </div>
