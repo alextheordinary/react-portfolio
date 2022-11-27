@@ -1,21 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return (
-        <div>
-            <Link to="/">
-                <h3>About Me</h3>
-            </Link>
-            <Link to="/portfolio">
-                <h3>Portfolio</h3>
-            </Link>
-            <Link to="/contact">
-                <h3>Contact</h3>
-            </Link>
-            <Link to="/resume">
-                <h3>Resume</h3>
-            </Link>
+        <div className="navbar is-success is-spaced">
+            <div className="navbar-menu">
+                <div className="navbar-start">
+                    <div className="navbar-item">
+                    <NavLink to="/" className="navbar-item">
+                        <h3>About Me</h3>
+                    </NavLink>
+                    </div>
+                    <NavLink to="/portfolio" className="navbar-item">
+                        <h3>Portfolio</h3>
+                    </NavLink>
+                    <NavLink to="/contact" className="navbar-item">
+                        <h3>Contact</h3>
+                    </NavLink>
+                    <NavLink to="/resume" className="navbar-item">
+                        <h3>Resume</h3>
+                    </NavLink>
+                </div>
+            </div>
         </div>
     );
 };

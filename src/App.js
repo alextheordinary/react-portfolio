@@ -12,7 +12,7 @@ function App() {
       <div>
         <Header />
         <Navigation />
-        <div class="container">
+        <div className="container">
           <Routes>
             <Route
               path="/"

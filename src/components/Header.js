@@ -1,14 +1,18 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+
 
 const Header = () => {
     return (
         <header>
-            <div>
-                <Link to="/">
-                    <h1>Alex Bellamy</h1>
-                </Link>
-            </div>
+            <section className="hero is-success">
+                <div className="hero-body">
+                    <div className="">
+                        <p className="title">
+                            Alex Bellamy
+                        </p>
+                    </div>
+                </div>
+            </section>
         </header>
     );
 };
