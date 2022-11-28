@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
             <Route
               path="/portfolio"
               element={<Portfolio />}
+            />
+            <Route
+              path="/contact"
+              element={<Contact />}
             />
           </Routes>
         </div>
