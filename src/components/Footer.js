@@ -1,23 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="content has-text-centered">
-                <h3>
-                <Link to="/">
-                    Git Hub
-                </Link>
-                {" "}
-                <Link to="/">
-                    LinkedIn
-                </Link>
-                {" "}
-                <Link to="/">
-                    Something Else
-                </Link>
-                </h3>
+            <a href='https://github.com/alextheordinary' target="_blank" rel="noreferrer" className='button is-primary m-1'>Git Hub</a>
+            <a href='/' target="_blank" rel="noreferrer" className='button is-primary m-1'>LinkedIn</a>
+            <a href='/' target="_blank" rel="noreferrer" className='button is-primary m-1'>Something Else</a>
             </div>
         </footer>
     );
